@@ -805,7 +805,7 @@ esac
 
 case $RPCAL in
 	"TIRPC")
-                KRBLIBS=`krb5-config --libs gssapi`
+                KRBLIBS=`$K5CONFIG --libs gssapi`
                 if test "$KRBLIBS" == ""; then
                    AC_MSG_ERROR( [krb5 libs not found, is krb5-config available...?] )
                 else

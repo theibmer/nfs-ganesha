@@ -8,6 +8,9 @@ else
 FSAL_UP_LIB_FLAGS =
 endif
 
+LIBS_LOCATION=$(CURDIR)/$(top_srcdir)/external_libs
+LDFLAGS+="-L${LIBS_LOCATION}"
+
 GSSD_LIB = ../RPCAL/gssd/libgssd.la
 
 if HAVE_GSSAPI

@@ -189,7 +189,8 @@ EXTRA_DIST=nfs-ganesha.spec              \
            nfs-ganesha.snmp.sysconfig    \
            nfs-ganesha.xfs.sysconfig     \
            nfs-ganesha.vfs.sysconfig     \
-           nfs-ganesha.zfs.sysconfig
+           nfs-ganesha.zfs.sysconfig     \
+           external_libs
 
 
 pkgconfigdir=$(libdir)/pkgconfig
